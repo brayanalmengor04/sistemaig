@@ -1,0 +1,2 @@
+# sistemaig
+laboratorio informacion gerencial
