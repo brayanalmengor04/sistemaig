@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Informacion Gerencial - Investigacion</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap">  <style>
+   *{
+    font-family: 'Poppins', sans-serif;
+  }
+   .carousel-item {
+      height: 100vh;
+    }
+    .section-1 {
+  background: linear-gradient(135deg, #3a0ca3, #480ca8); /* Degradado de morado oscuro */
+  animation: gradient-animation 15s ease infinite;
+}
+
+.section-2 {
+  background: linear-gradient(135deg, #480ca8, #4a4e69); /* Degradado de morado a gris oscuro */
+  animation: gradient-animation 15s ease infinite;
+}
+
+.section-3 {
+  background: linear-gradient(135deg, #4a4e69, #495057); /* Degradado de gris oscuro a gris medio */
+  animation: gradient-animation 15s ease infinite;
+}
+
+.section-4 {
+  background: linear-gradient(135deg, #495057, #1f2d3d); /* Degradado de gris medio a azul petróleo */
+  animation: gradient-animation 15s ease infinite;
+}
+
+.section-5 {
+  background: linear-gradient(135deg, #1f2d3d, #0d1b2a); /* Degradado de azul petróleo a azul oscuro */
+  animation: gradient-animation 15s ease infinite;
+}
+@keyframes neonGlow {
+  0% {
+                filter: drop-shadow(0 0 5px #fff) ;
+                transform:translateY(0);
+            }
+            50% {
+                filter: drop-shadow(0 0 10px #ff00ff);
+                transform:translateY(-15px);
+            }
+            100% {
+                filter: drop-shadow(0 0 5px #fff);
+                transform:translateY(0);
+            }
+}
+
+.img-floating {
+  animation: neonGlow 3s ease-in-out infinite;
+}
+
+
+/* Animación de fondo */
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+    .navbar {
+      background-color: rgba(0, 0, 0, 0); /* Semitransparente */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    /* Alinear el contenido en el centro de cada sección */
+    .carousel-item .d-flex {
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+    }
+    /* Espacio para la imagen */
+    .carousel-item .image-placeholder {
+      height: 300px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    /* Estilo del contenido de la sección */
+    .carousel-item .content {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }  
+   
+ 
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <div class="navbar-collapse d-flex justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" href="#" data-slide-to="0">Concepto</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#" data-slide-to="1">Importancia</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#" data-slide-to="2">Ventajas y Desventaja</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#" data-slide-to="3">Papel SIO</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#" data-slide-to="4">Elementos Básicos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carrusel con sections a pantalla completa -->
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <section class="carousel-item active section-1">
+        <div class="d-flex">
+          <div class="text-light p-4 w-50">
+            <h2 class="display-4 fw-bold">Sistema de Información Gerencial</h2>
+            <h3 class="h4">Concepto</h3>
+            <p class="lead">Un Sistema de Información Gerencial (SIG) es un sistema basado en tecnología que proporciona a los gerentes información necesaria para la toma de decisiones. Estos sistemas están diseñados para proporcionar informes regulares y excepcionales que ayuden en la supervisión y dirección de los recursos y operaciones de la organización.</p>
+          </div>
+          <div class="d-flex justify-content-center align-items-center w-50">
+            <img src="/assets/DrawKit Vector Illustration Project Manager (8).png" alt="Background Image" class="img-fluid img-floating">
+          </div>
+        </div>
+      </section>
+
+      <section class="carousel-item section-2">
+        <div class="d-flex">
+          <div class="text-light p-4 w-50">
+            <h2 class="display-4 fw-bold">La Importancia del Sistema de Información Gerencial</h2>
+            <h3 class="h4">Rol en la Toma de Decisiones</h3>
+            <p class="lead">Los Sistemas de Información Gerencial (SIG) son vitales para las organizaciones modernas, ya que permiten a los gerentes tomar decisiones informadas y eficientes basadas en datos precisos y en tiempo real. Estos sistemas mejoran la planificación, organización y control, al proporcionar un flujo constante de información sobre el desempeño de la empresa, identificando áreas de mejora y oportunidades de crecimiento.</p>
+          </div>
+          <div class="d-flex justify-content-center align-items-center w-50">
+            <img src="/assets/DrawKit Vector Illustration Project Manager (17).png" alt="Background Image" class="img-fluid img-floating">
+          </div>
+        </div>
+      </section> 
+
+      <section class="carousel-item section-3">
+        <div class="container">
+          <div class="d-flex justify-content-start ">
+             <div class="custom-bg">
+              <img src="/assets/DrawKit Vector Illustration Project Manager (15).png" alt="Background Image" class="img-fluid img-floating">
+            </div>
+            <div class="d-flex flex-column align-items-center">
+              <div class="mb-4">
+                <h3 class="text-primary fs-4">Ventajas de un Sistema de Información Gerencial (SIG)</h3>
+                <p class="p-3 rounded shadow-sm fs-6">
+                  Los Sistemas de Información Gerencial (SIG) ofrecen múltiples beneficios a las organizaciones. En primer lugar, mejoran la toma de decisiones al proporcionar información precisa y actualizada en tiempo real, lo que permite a los gerentes tomar decisiones más informadas y oportunas. Además, los SIG facilitan la automatización de procesos empresariales, reduciendo costos operativos y errores humanos, y aumentando la eficiencia general. La centralización de la información contribuye a una mejor comunicación y colaboración entre departamentos, optimizando el flujo de trabajo y mejorando la cohesión organizacional.
+                </p>
+              </div>
+              <div class="mb-4">
+                <h3 class="text-danger fs-4">Desventajas de un Sistema de Información Gerencial (SIG)</h3>
+                <p class="p-3 rounded shadow-sm fs-6">
+                  A pesar de sus ventajas, la implementación de un SIG puede presentar varias desventajas. Uno de los principales inconvenientes es el alto costo inicial, que incluye la adquisición del software, el hardware necesario y los servicios de consultoría. La integración del SIG con sistemas existentes puede ser compleja y requerir personalización, lo que puede llevar tiempo y recursos adicionales. Además, la capacitación del personal para el uso del nuevo sistema puede ser un desafío, ya que puede requerir habilidades técnicas específicas y un ajuste en los procesos de trabajo, lo que podría afectar temporalmente la productividad.
+                </p>
+              </div>
+            </div>
+      </section> 
+       
+      <section class="carousel-item section-4">
+       <div class="d-flex w-100 justify-content-center align-items-center">
+        <div class="container text-center">
+          <h1 class="mb-4">El papel de los sistemas de información</h1>
+          <div class="row">
+            <div class="col-lg-6 mx-auto">
+              <p class="lead">Los sistemas de información son fundamentales para la automatización de procesos, la toma de decisiones, la optimización de recursos, y la innovación en las organizaciones modernas.</p>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-lg-3">
+              <img src="/assets/DrawKit Vector Illustration Project Manager (6).png" class="img-fluid rounded-circle mb-3 img-floating" alt="Automatización">
+              <h5>Automatización</h5>
+              <p style="font-size: 0.5em;">Optimización de tareas repetitivas para mayor eficiencia.</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="/assets/DrawKit Vector Illustration Project Manager (14).png" class="img-fluid rounded-circle mb-3 img-floating" alt="Toma de decisiones">
+              <h5>Toma de decisiones</h5>
+              <p style="font-size: 0.5em;">Decisiones informadas basadas en datos precisos y actualizados.</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="/assets/DrawKit Vector Illustration Project Manager (17).png" class="img-fluid img-floating" alt="Innovación">
+              <h5>Innovación</h5>
+              <p style="font-size: 0.5em;">Facilitan el desarrollo de nuevos productos y soluciones.</p>
+            </div>
+            <div class="col-lg-3">
+              <img src="/assets/DrawKit Vector Illustration Project Manager (16).png" class="img-fluid rounded-circle mb-3 img-floating" alt="Seguridad">
+              <h5>Seguridad</h5>
+              <p style="font-size: 0.5em;" >Protección de datos confidenciales y cumplimiento normativo.</p>
+            </div>
+          </div>
+        </div>
+
+       </div>
+      </section>
+    
+      <section class="carousel-item section-5">
+        <div class="container py-5">
+          <div class="row">
+            <!-- Columna de imagen -->
+            <div class="col-lg-6 mb-4">
+              <img src="/assets/DrawKit Vector Illustration Project Manager (5).png" class="img-fluid rounded img-floating" alt="Elementos básicos y funcionales">
+            </div>
+            <!-- Columna de texto -->
+            <div class="col-lg-6">
+              <h2 class="mb-4 text-white">Elementos Básicos y Funcionales de los Sistemas de Información Gerencial (SIG)</h2>
+              <p class="text-white">Los Sistemas de Información Gerencial (SIG) son herramientas clave para la toma de decisiones en las organizaciones. Los elementos básicos y funcionales de un SIG incluyen:</p>
+              <ul class="list-unstyled">
+                <li class="bg-dark text-white p-3 mb-2 rounded">
+                  <strong>Entrada de Datos:</strong> Captura y procesamiento de datos relevantes para la organización.
+                </li>
+                <li class="bg-dark text-white p-3 mb-2 rounded">
+                  <strong>Procesamiento:</strong> Transformación de datos en información útil mediante análisis y cálculos.
+                </li>
+                <li class="bg-dark text-white p-3 mb-2 rounded">
+                  <strong>Almacenamiento:</strong> Conservación de datos e información para consultas futuras.
+                </li>
+                <li class="bg-dark text-white p-3 mb-2 rounded">
+                  <strong>Salida de Información:</strong> Generación de informes, gráficos y otros documentos que faciliten la toma de decisiones.
+                </li>
+                <li class="bg-dark text-white p-3 mb-2 rounded">
+                  <strong>Retroalimentación:</strong> Proceso de revisión y ajuste de la información para mejorar la precisión y relevancia.
+                </li>
+              </ul>
+              <p>Estos componentes trabajan en conjunto para proporcionar a los directivos y responsables de áreas la información necesaria para tomar decisiones informadas y estratégicas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS --> 
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    
+    document.querySelectorAll('.nav-link').forEach(function(link) {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        var slideTo = this.getAttribute('data-slide-to');
+        var carousel = new bootstrap.Carousel(document.querySelector('#carouselExample'));
+        carousel.to(slideTo);
+      });
+    });  
+   
+  </script>
+</body>
+</html>
